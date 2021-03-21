@@ -4,10 +4,519 @@
     padding: 0;
 }
 
-.icons {
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*// actual menu hamburger icon type etc*/
+#menuToggle {
+    display: block;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle a {
+    text-decoration: none;
+    color: white;
+
+    transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+    color: #f13a11;
+}
+
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #f13a11;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #f13a11;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3),
+#menuToggle input:checked ~ span:nth-last-child(5) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-55deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+    position: fixed;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+
+    background: #171819;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul {
+    /*    transform: translate(0, 100%);*/
+    transform: none;
+}
+
+.icons,
+.table-icon {
     width: 15px;
+    color: white;
 }
 
 img {
     max-width: 100%;
+}
+
+
+#home {
+    text-align: center;
+    background: url('images/hero-bg.jpg') no-repeat top;
+    background-size: cover;
+    min-height: 100vh;
+    vertical-align: middle;
+    opacity: 0.90;
+}
+
+#home > h1 {
+    color: white;
+    margin: 0 auto;
+    display: block;
+    font-size: 2.4rem;
+    margin-bottom: 3.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+#home > h3 {
+    color: #909090;
+    padding-top: 12rem;
+    padding-bottom: 1.6rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+#btn1 {
+    color: white;
+    padding-right: 2rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+#btn1:hover {
+    color: #f13a11;
+    transition: all 0.3s ease;
+}
+
+#btn2 {
+    color: #f13a11;
+    border: 1px solid #f13a11;
+    padding: 1rem 1.6rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+#btn2:hover {
+    background-color: white;
+    color: #f13a11;
+    border-color: white;
+    transition: all 0.3s ease;
+}
+
+#membership {
+    background-color: #171819;
+    padding: 5rem 20px;
+}
+
+.membership-details > h2,
+.hours > h3 {
+    color: white;
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+}
+
+.membership-details > h3 {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.membership-details > p {
+    font-size: 1.2rem;
+    color: #666262;
+    margin-bottom: 3rem;
+}
+
+#member-btn {
+    background-color: #f13a11;
+    color: white;
+    border: 1px solid #f13a11;
+    padding: 0.7rem 3.6rem;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.hours > h3 {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.days {
+    color: white;
+    line-height: 2.5;
+    font-weight: 300;
+}
+
+.time {
+    font-size: 1.2rem;
+    color: #666262;
+}
+
+#about-us {
+    padding: 5rem 20px;
+    background-color: #ededed;
+}
+
+
+#about-us > h2 {
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+}
+
+#about-us > p {
+    font-size: 1.1rem;
+    color: #666262;
+    margin-bottom: 3rem;
+}
+
+.grid-photo {
+    margin-bottom: -6px;
+}
+
+.team-info {
+    background-color: #ffffff;
+    border-radius: 0 0 2px 2px;
+    box-shadow: rgb(20 20 20 / 10%);
+    padding: 20px;
+    margin-bottom: 3rem;
+}
+
+.name-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.team-details {
+    font-weight: 400;
+}
+
+#classes {
+    margin-top: -100px;
+    padding: 5rem 20px;
+    background-color: #ededed;
+}
+
+.class-container {
+    background-color: white;
+    padding-top: 5rem;
+}
+
+.class-container > h3,
+.class-container > h2 {
+    text-align: center;
+}
+
+.class-container > h3 {
+    font-size: 1.5rem;
+    color: #909090;
+    font-weight: 400;
+}
+
+.class-container > h2 {
+    font-size: 2rem;
+    padding-bottom: 3rem;
+
+}
+
+.class-info {
+    background-color: #ffffff;
+    border-radius: 0 0 2px 2px;
+    box-shadow: rgb(20 20 20 / 10%);
+    padding: 20px;
+    margin-bottom: 3rem;
+}
+
+.class-info > h4 {
+    color: #909090;
+    font-size: 1.2rem;
+}
+
+.class-price {
+    float: right;
+    margin-top: -60px;
+    margin-right: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #f13a11;
+    color: white;
+    padding: 0.9rem;
+    border-radius: 50%;
+}
+
+.classes-p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #666262;
+}
+
+#schedules {
+    background-color: #171819;
+    padding: 5rem 20px;
+}
+
+#schedules > h3 {
+    font-size: 1.5rem;
+    color: #909090;
+    font-weight: 400;
+    text-align: center;
+}
+
+#schedules > h2 {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+table {
+    width: 100%;
+    border-spacing: 1px;
+    text-align: center;
+    display: block;
+    overflow-x: auto;
+}
+
+table td {
+    padding: 1.5rem;
+    border-right: 0.1px solid #909090;
+    border-bottom: 0.1px solid #909090;
+}
+
+.table-icon {
+    width: 25px;
+    max-width: 100px;
+}
+
+thead {
+    background-color: #f13a11;
+    color: white;
+    font-size: 1rem;
+}
+
+thead tr th {
+    padding: 1rem;
+}
+
+table span {
+    color: #909090;
+    display: block;
+    font-size: 0.9rem;
+}
+
+.red-time {
+    background-color: #f13a11;
+    color: white;
+    font-weight: bold;
+    padding: 1.2rem;
+    border-right: none;
+    border-bottom: none;
+}
+
+strong {
+    color: white;
+}
+
+#contact {
+    padding: 5rem 20px;
+}
+
+#contact > h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: black;
+    line-height: 1.2;
+}
+
+input {
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    font-family: 'Open Sans';
+}
+
+textarea {
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    width: 100%;
+    font-family: 'Open Sans';
+    padding-top: 1rem;
+    color: #808080;
+}
+
+#submit {
+    margin-top: 1rem;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 4rem;
+}
+
+#submit:hover {
+    background-color: #f13a11;
+}
+
+.map > h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.map > h3 {
+    color: #666262;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.location-icon {
+    width: 15px;
+}
+
+hr {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.map-google {
+    width: 100%;
+}
+
+footer {
+    margin-bottom: 4rem;
+}
+
+footer > p,
+footer > a,
+footer > span {
+    color: #666262;
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+footer > a {
+    padding-left: 3rem;
+    margin-right: 15px;
 }
