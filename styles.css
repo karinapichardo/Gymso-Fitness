@@ -199,7 +199,8 @@ img {
 #btn2 {
     color: #f13a11;
     border: 1px solid #f13a11;
-    padding: 1rem 1.6rem;
+    padding: 1rem 1.5rem;
+    display: inline-block;
     font-weight: 500;
     font-size: 0.9rem;
 }
@@ -240,9 +241,20 @@ img {
     background-color: #f13a11;
     color: white;
     border: 1px solid #f13a11;
-    padding: 0.7rem 3.6rem;
+    padding: 0.5rem 0.3rem;
     border-radius: 2px;
     cursor: pointer;
+    display: block;
+    max-width: 350px;
+    text-align: center;
+    max-height: 85px;
+}
+
+#member-btn:hover {
+    background-color: white;
+    border-color: white;
+    color: #f13a11;
+    transition: all 0.3s ease;
 }
 
 .hours > h3 {
@@ -278,8 +290,36 @@ img {
     margin-bottom: 3rem;
 }
 
+.grid-container {
+    max-width: 350px;
+}
+
 .grid-photo {
-    margin-bottom: -6px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.twitter-svg,
+.facebook-svg,
+.instagram-svg {
+    max-width: 20px;
+    fill: #666262;
+    float: right;
+    margin-top: -22px;
+    margin-right: 15px;
+}
+
+.facebook-svg {
+    margin-right: 20px !important;
+}
+
+
+.twitter-svg:hover,
+#facebook-svg:hover,
+.instagram-svg:hover {
+    fill: #f13a11;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .team-info {
@@ -343,12 +383,11 @@ img {
 .class-price {
     float: right;
     margin-top: -60px;
-    margin-right: 20px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     background-color: #f13a11;
     color: white;
-    padding: 0.9rem;
+    padding: 0.6rem;
     border-radius: 50%;
 }
 
@@ -474,6 +513,7 @@ textarea {
 
 #submit:hover {
     background-color: #f13a11;
+    transition: all 0.3s ease;
 }
 
 .map > h2 {
@@ -489,10 +529,6 @@ textarea {
     margin-bottom: 1.5rem;
 }
 
-.location-icon {
-    width: 15px;
-}
-
 hr {
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
@@ -500,23 +536,39 @@ hr {
 
 .map-google {
     width: 100%;
+    max-width: 450px;
 }
 
 footer {
     margin-bottom: 4rem;
 }
 
+.mail-icon {
+    fill: red;
+}
+
+.mail-svg {
+    max-width: 20px;
+    vertical-align: middle;
+}
+
+.red-phone {
+    max-width: 20px;
+    vertical-align: middle;
+}
+
+footer {
+    text-align: center;
+}
+
 footer > p,
 footer > a,
 footer > span {
     color: #666262;
-    text-align: center;
-    margin-top: -40px;
     margin-bottom: 15px;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 footer > a {
-    padding-left: 3rem;
     margin-right: 15px;
 }
