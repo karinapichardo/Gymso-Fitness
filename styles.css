@@ -709,3 +709,163 @@ footer > a {
 
     }
 }
+
+/*styles for laptops*/
+@media (min-width: 1281px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #menuToggle {
+        display: none;
+    }
+
+    #home > h3 {
+        padding-top: 300px;
+        font-size: 1.5rem;
+    }
+
+    #home > h1 {
+        font-size: 2.6rem;
+    }
+
+    #btn1,
+    #btn2 {
+        font-size: 1.1rem;
+    }
+
+    #member-btn {
+        font-weight: 500;
+        max-width: 460px;
+        font-size: 1.1rem;
+    }
+
+    .membership-details > h2,
+    .hours > h3 {
+        font-size: 2.4rem;
+    }
+
+    #membership > p {
+        font-weight: 200;
+    }
+
+    .membership-details {
+        margin-left: 100px;
+    }
+
+    .days {
+        font-weight: 200;
+    }
+
+    .grid-container {
+        padding-left: 150px;
+        grid-template-columns: 520px 520px;
+        grid-column-gap: 4rem;
+    }
+
+    #about-us > h2 {
+        margin-top: 3rem;
+    }
+
+    #about-us > h2,
+    #about-us > p {
+        margin-left: 150px;
+        width: 450px;
+    }
+
+    #about-us > p {
+        font-size: 1.16rem;
+        line-height: 1.8;
+        font-weight: 400;
+    }
+
+    .team-responsive {
+        grid-template-columns: 265px 265px;
+        grid-gap: 2rem;
+        position: absolute;
+        right: 460px;
+        top: 1390px;
+
+    }
+
+    .responsive-container {
+        display: grid;
+        grid-template-columns: 480px 480px;
+        grid-gap: 4rem;
+    }
+
+    .classes-responsive-ct {
+        display: grid;
+        grid-template-columns: 379px 379px 379px;
+        margin-left: -58px;
+        grid-gap: 2rem;
+    }
+
+    .class-container {
+        width: 1200px;
+        margin: auto;
+    }
+
+    #contact > h2,
+    .map > h2 {
+        font-size: 2.1rem;
+    }
+
+    .map > h2 {
+        margin-top: -67px;
+    }
+
+    .map-google {
+        max-width: 500px;
+    }
+
+    #schedules > h2 {
+        font-size: 2.5rem;
+    }
+
+    table {
+        margin-left: 115px;
+        margin-right: auto;
+    }
+
+    #contact > h2 {
+        margin-left: 150px;
+        max-width: 800px;
+        width: 400px;
+    }
+}
+
+/* large monitors */
+@media (min-width: 1800px) {
+    #home > h3 {
+        padding-top: 400px;
+    }
+
+    #about-us > h2,
+    #about-us > p {
+        margin-left: 350px;
+    }
+
+    .team-responsive {
+        position: absolute;
+        top: 1600px;
+        left: 500px;
+    }
+
+    .classes-responsive-ct {
+        margin-left: 184px !important;
+        grid-gap: 1.9rem;
+    }
+
+    table {
+        margin-left: 350px;
+    }
+
+    #contact > h2 {
+        margin-left: 399px;
+    }
+
+    .grid-container {
+        margin-left: 250px;
+    }
+}
