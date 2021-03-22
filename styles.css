@@ -567,3 +567,85 @@ footer > span {
 footer > a {
     margin-right: 15px;
 }
+
+/*styles for smaller tablets*/
+@media (min-width: 768px) {
+    #menu {
+        padding: 1rem 55% 2rem 45%;
+    }
+
+    #menu li {
+        font-size: 1rem;
+    }
+
+    #menuToggle {
+        height: 50px;
+        padding-top: 2px;
+    }
+
+    #menuToggle:after {
+        left: 35%;
+        font-size: 2rem;
+    }
+
+    #home > h3 {
+        padding-top: 23.3rem;
+    }
+
+    #home > h1 {
+        width: 480px;
+    }
+
+    .membership-details {
+        margin-left: 20px;
+    }
+
+    .hours {
+        margin-top: -45px;
+        border-left: 1px #666262 solid;
+        height: 375px;
+        padding-left: 2.8rem;
+    }
+
+    .hours > p {
+        font-size: 1.2rem;
+    }
+
+    #about-us > h2,
+    #about-us > p {
+        margin-left: 6rem;
+        width: 500px;
+    }
+
+    #about-us > h2 {
+        font-size: 2.5rem;
+    }
+
+    #about-us > p {
+        font-size: 1.2rem;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 348px 348px;
+        grid-gap: 2rem;
+        margin-right: 8px;
+    }
+
+    #contact > h2 {
+        font-size: 2.3rem;
+        width: 300px;
+    }
+
+    .map > h2 {
+        font-size: 2.3rem;
+        margin-top: -120px;
+        width: 300xp;
+    }
+
+    footer > p,
+    footer > a,
+    footer > span {
+        font-size: 1.2rem;
+    }
+}
