@@ -70,21 +70,23 @@
             </section>
 
             <section id="membership">
-                <div class="membership-details">
-                    <h2 data-aos="slide-up">New to the gymso?</h2>
-                    <h3 data-aos="slide-up">Your membership is up to 2 months FREE ($62.50 per month)</h3>
-                    <p data-aos="slide-up">Gymso Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar iag nec rutrum elementum. Mauris dignissim tellus sit.</p>
-                    <a href="#contact" id="member-btn" data-aos="slide-up">BECOME A MEMBER TODAY</a>
-                </div>
+                <div class="grid-container">
+                    <div class="membership-details">
+                        <h2 data-aos="slide-up">New to the gymso?</h2>
+                        <h3 data-aos="slide-up">Your membership is up to 2 months FREE ($62.50 per month)</h3>
+                        <p data-aos="slide-up">Gymso Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar iag nec rutrum elementum. Mauris dignissim tellus sit.</p>
+                        <a href="#contact" id="member-btn" data-aos="slide-up">BECOME A MEMBER TODAY</a>
+                    </div>
 
-                <div class="hours">
-                    <h3 data-aos="slide-up">Working hours</h3>
+                    <div class="hours">
+                        <h3 data-aos="slide-up">Working hours</h3>
 
-                    <p class="days" data-aos="slide-up"><strong>Sunday: Closed</strong></p>
-                    <p class="days" data-aos="slide-up"><strong>Monday-Friday</strong></p>
-                    <p class="time" data-aos="slide-up">7:00 AM - 10:00 PM</p>
-                    <p class="days" data-aos="slide-up"><strong>Saturday</strong></p>
-                    <p class="time" data-aos="slide-up">6:00 AM - 4:00 PM</p>
+                        <p class="days" data-aos="slide-up"><strong>Sunday: Closed</strong></p>
+                        <p class="days" data-aos="slide-up"><strong>Monday-Friday</strong></p>
+                        <p class="time" data-aos="slide-up">7:00 AM - 10:00 PM</p>
+                        <p class="days" data-aos="slide-up"><strong>Saturday</strong></p>
+                        <p class="time" data-aos="slide-up">6:00 AM - 4:00 PM</p>
+                    </div>
                 </div>
             </section>
 
@@ -291,45 +293,45 @@
 
             <section id="contact">
                 <h2 data-aos="slide-up">Feel free to ask anything</h2>
+                <div class="grid-container">
+                    <div class="form-container" data-aos="slide-up">
+                        <form id="contact-form">
 
-                <div class="form-container" data-aos="slide-up">
-                    <form id="contact-form">
+                            <div class="form-content">
+                                <label for="name" id="name-label"></label>
+                                <input type="text" placeholder="Name" id="name" name="name" class="form-control" required>
+                            </div>
 
-                        <div class="form-content">
-                            <label for="name" id="name-label"></label>
-                            <input type="text" placeholder="Name" id="name" name="name" class="form-control" required>
-                        </div>
+                            <label for="email" id="email-label"></label>
+                            <input type="email" placeholder="Email" id="email" name="email" class="form-control" required>
 
-                        <label for="email" id="email-label"></label>
-                        <input type="email" placeholder="Email" id="email" name="email" class="form-control" required>
+                            <textarea id="message" name="message" rows="8" cols="40">Message</textarea>
+                            <button type="submit" id="submit" data-aos="slide-up">Send Message</button>
+                        </form>
+                    </div>
 
-                        <textarea id="message" name="message" rows="8" cols="40">Message</textarea>
-                        <button type="submit" id="submit" data-aos="slide-up">Send Message</button>
-                    </form>
-                </div>
-
-                <div class="map">
-                    <h2 data-aos="slide-up">Where you can find us</h2>
-                    <h3 data-aos="slide-up"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="22px" viewBox="0 0 24 24" version="1.1">
-                            <g id="Iconly/Bold/Location" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g id="Location" transform="translate(3.500000, 2.000000)" fill="#f13a11" fill-rule="nonzero">
-                                    <path d="M8.5299,-1.99535389e-05 C10.7899,0.01 12.9499,0.91 14.5299,2.49 C16.1199,4.08 17.0099,6.23 16.9999834,8.46 L16.9999834,8.46 L16.9999834,8.51 C16.9399,11.54 15.2399,14.33 13.1199,16.51 C11.9199,17.74 10.5899,18.83 9.1399,19.75 C8.7499,20.08 8.1799,20.08 7.7899,19.75 C5.6399,18.35 3.7399,16.59 2.1999,14.54 C0.8499,12.76 0.0799,10.62 -0.0001,8.39 C0.0199,3.74 3.8399,-0.01 8.5299,-1.99535389e-05 Z M8.5299,5.93 C7.0399,5.93 5.8399,7.12 5.8399,8.6 C5.8399,10.061 7.0199,11.24 8.4999,11.26 L8.4999,11.26 L8.5299,11.26 C9.2399,11.26 9.9199,10.99 10.4199,10.5 C10.9399,9.99 11.2309,9.311 11.2309,8.6 C11.2309,7.12 10.0199,5.93 8.5299,5.93 Z" />
+                    <div class="map">
+                        <h2 data-aos="slide-up">Where you can find us</h2>
+                        <h3 data-aos="slide-up"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="22px" viewBox="0 0 24 24" version="1.1">
+                                <g id="Iconly/Bold/Location" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Location" transform="translate(3.500000, 2.000000)" fill="#f13a11" fill-rule="nonzero">
+                                        <path d="M8.5299,-1.99535389e-05 C10.7899,0.01 12.9499,0.91 14.5299,2.49 C16.1199,4.08 17.0099,6.23 16.9999834,8.46 L16.9999834,8.46 L16.9999834,8.51 C16.9399,11.54 15.2399,14.33 13.1199,16.51 C11.9199,17.74 10.5899,18.83 9.1399,19.75 C8.7499,20.08 8.1799,20.08 7.7899,19.75 C5.6399,18.35 3.7399,16.59 2.1999,14.54 C0.8499,12.76 0.0799,10.62 -0.0001,8.39 C0.0199,3.74 3.8399,-0.01 8.5299,-1.99535389e-05 Z M8.5299,5.93 C7.0399,5.93 5.8399,7.12 5.8399,8.6 C5.8399,10.061 7.0199,11.24 8.4999,11.26 L8.4999,11.26 L8.5299,11.26 C9.2399,11.26 9.9199,10.99 10.4199,10.5 C10.9399,9.99 11.2309,9.311 11.2309,8.6 C11.2309,7.12 10.0199,5.93 8.5299,5.93 Z" />
+                                    </g>
                                 </g>
-                            </g>
-                        </svg>
-                        10002 Lower East Side - New York, New York
-                    </h3>
-                    <hr>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12096.254076967456!2d-73.99354565842103!3d40.7166181693009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598015ac8beb%3A0x59b849fea56b6a70!2sLower%20East%20Side%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1616271818081!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="map-google" data-aos="slide-up"></iframe>
-                    <hr>
+                            </svg>
+                            10002 Lower East Side - New York, New York
+                        </h3>
+                        <hr>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12096.254076967456!2d-73.99354565842103!3d40.7166181693009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598015ac8beb%3A0x59b849fea56b6a70!2sLower%20East%20Side%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1616271818081!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="map-google" data-aos="slide-up"></iframe>
+                    </div>
                 </div>
-
+                <hr>
             </section>
         </main>
 
         <footer data-aos="slide-up">
             <p>
-                Copyright &copy; 2020 Gymso Fitness Co. <br>
+                Copyright &copy; 2021 Gymso Fitness Co. <br>
                 Design: Tooplate
             </p>
             <a href="mailto:hello@company.co">
