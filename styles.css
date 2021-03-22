@@ -25,7 +25,6 @@ a {
     font-size: 1.5rem;
 }
 
-
 #menuToggle {
     width: 100%;
     background-color: #171819;
@@ -40,11 +39,11 @@ a {
 #menuToggle a {
     text-decoration: none;
     color: white;
-    transition: color 0.3s ease;
 }
 
 #menuToggle a:hover {
     color: #f13a11;
+    transition: color 0.3s ease;
 }
 
 /*for hiden checkbox*/
@@ -287,7 +286,7 @@ img {
 }
 
 .grid-container {
-    max-width: 350px;
+    max-width: 375px;
 }
 
 .grid-photo {
