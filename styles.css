@@ -15,6 +15,17 @@ a {
     text-decoration: none;
 }
 
+#menuToggle:after {
+    content: 'GYMSO FITNESS';
+    left: 25%;
+    top: -40px;
+    font-weight: bold;
+    position: relative !important;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
 #menuToggle {
     width: 100%;
     background-color: #171819;
