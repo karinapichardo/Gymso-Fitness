@@ -5,7 +5,7 @@ This project was very fun to do, I got to practice with flexbox and css grid. Li
 
 # Key takeaways:
 
-#### I learned about SVGS and the power they have, like being able to style them however you'd like and how they're able to scale no matter their size.
+* I learned about SVGS and the power they have, like being able to style them however you'd like and how they're able to scale no matter their size.
 
 #### I learned how to incorporate google maps into my sites which was really cool.
 
