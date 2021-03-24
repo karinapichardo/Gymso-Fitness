@@ -15,6 +15,10 @@ a {
     text-decoration: none;
 }
 
+#desktop-menu {
+    display: none;
+}
+
 #menuToggle:after {
     content: 'GYMSO FITNESS';
     left: 25%;
@@ -87,6 +91,7 @@ a {
 }
 
 /* transforms all the slices of hamburger into a crossmark*/
+
 #menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-5px, 0px);
@@ -714,6 +719,52 @@ footer > a {
 @media (min-width: 1281px) {
     body {
         overflow-x: hidden;
+    }
+
+    #desktop-menu {
+        background-color: black;
+        display: flex;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        height: 65px;
+        padding-left: 45%;
+    }
+
+    #desktop-menu > li {
+        display: flex;
+        flex-direction: row;
+        margin-right: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #desktop-menu > li > a {
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        font-size: 1rem;
+    }
+
+    #desktop-menu > li > a:hover {
+        color: #f13a11;
+        transition: all 0.3s ease;
+    }
+
+    .company-logo {
+        position: absolute;
+        left: 8rem;
+        font-size: 1.8rem;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .company-logo:hover {
+        color: #f13a11;
+        transition: all 0.3s ease;
     }
 
     #menuToggle {
