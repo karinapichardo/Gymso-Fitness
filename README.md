@@ -1,6 +1,5 @@
 # Gymso-Fitness
-
-Recreated a commercial website designed by tooplate!
+Created a commercial website designed by tooplate!
  
 This project was very fun to do, I got to practice with flexbox and css grid. Likewise, I practiced creating responsive tables. 
 
