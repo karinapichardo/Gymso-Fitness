@@ -4,6 +4,7 @@ Created a commercial website designed by tooplate!
 This project was very fun to do, I got to practice with flexbox and css grid. Likewise, I practiced creating responsive tables. 
 
 # Key takeaways:
+* I learned about AOS - “On Scroll” Animation Library and added it to my project. This might have been my favorite new thing that I learned!
 
 * I learned about SVGS and the power they have, like being able to style them however you'd like and how they're able to scale no matter their size.
 
