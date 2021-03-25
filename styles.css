@@ -323,7 +323,7 @@ img {
 .team-info {
     background-color: #ffffff;
     border-radius: 0 0 2px 2px;
-    box-shadow: rgb(20 20 20 / 10%);
+    box-shadow: 10px 5px 5px #909090;
     padding: 20px;
     margin-bottom: 3rem;
 }
@@ -368,7 +368,7 @@ img {
 .class-info {
     background-color: #ffffff;
     border-radius: 0 0 2px 2px;
-    box-shadow: rgb(20 20 20 / 10%);
+    box-shadow: 10px 5px 5px #909090;
     padding: 20px;
     margin-bottom: 3rem;
 }
